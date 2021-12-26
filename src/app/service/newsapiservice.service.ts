@@ -11,8 +11,8 @@ export class NewsapiserviceService {
     data="";    
 
   everyThingUrl=`http://newsapi.org/v2/everything?q=bokaro&apiKey=7e5f361b870a4f94b109bb2cb29e34e3`;
-  newsApiUrl="https://gnews.io/api/v4/top-headlines?token=0d09ea58b7f2e9f79097aa03035fc462&lang=en";
-  techNewsUrl="http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=7e5f361b870a4f94b109bb2cb29e34e3";
+  newsApiUrl="";
+  techNewsUrl="https://gnews.io/api/v4/search?q=india&token=0d09ea58b7f2e9f79097aa03035fc462";
 
   topTechnogy():Observable<any>{
     return this._http.get(this.techNewsUrl);
